@@ -76,8 +76,15 @@ header .d-flex{
 .benefits .col_12{
     background-color: var(--re-background-light);
 }
+/*benefits*/
 
+/*about*/
 
+.banner{
+    background-color: var(--re-primary);
+}
+
+/*banner*/
 /*#endregion main*/
 
 @media screen and (min-width:768px) {
