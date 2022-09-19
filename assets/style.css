@@ -3,3 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --re-dark: #111111;
+    --re-background-dark: #333333;
+    --re-background-light: #FFFFFF;
+    --re-banner-second: #D4D3F4;
+    --re-primary: #9792E4;
+    --re-secondary: #0084FD;
+    --re-background-second: #B5DDFF;
+    --re-banner-third: #FDC15F;
+}
