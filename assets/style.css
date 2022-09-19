@@ -37,6 +37,14 @@
     width: calc((100% / 12)* 1);
 }
 
+header,
+.applications,
+.partners .cards,
+.benefits h3,
+.banner,
+footer{
+    color: var(--re-background-light);
+}
 
 /*#region header*/
 header{
@@ -86,6 +94,12 @@ header .d-flex{
 
 /*banner*/
 /*#endregion main*/
+
+/*#region footer*/
+footer{
+    background-color: var(--re-background-dark);
+}
+/*#endregion footer*/
 
 @media screen and (min-width:768px) {
     .col_lg_6{
