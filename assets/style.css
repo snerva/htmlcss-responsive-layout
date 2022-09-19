@@ -69,6 +69,14 @@ header .d-flex{
 }
 /*partners*/
 
+.benefits{
+    background-color: var(--re-primary);
+}
+
+.benefits .col_12{
+    background-color: var(--re-background-light);
+}
+
 
 /*#endregion main*/
 
