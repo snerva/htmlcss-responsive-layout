@@ -16,29 +16,31 @@
 }
 
 .container{
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
 }
 
 .d-flex{
     display: flex;
-    flex-wrap: wrap;
 }
 
 .row{
-    margin: 0 -1rem;
+    margin: 1rem -1rem;
 }
 
 [class^="col_"]{
     padding: 0 1rem;
 }
 
-.col_12{
-    width: calc((100% / 12)* 1);
+.col_md_4{
+    width: calc((100% / 12)* 4);
+}
+.col_md_8{
+    width: calc((100% / 12)* 8);
 }
 
 .button{
@@ -49,7 +51,6 @@ img{
 }
 
 header,
-.applications,
 .partners .cards,
 .benefits h3,
 .banner,
@@ -71,12 +72,20 @@ header .d-flex{
     padding: 1rem 0;
 }
 
-.mobile .fa-bars{
+.mobile{
+    display: none;
+}
+.desktop{
+    display: flex;
+}
+.desktop a{
+    padding-right: 1rem;
+    text-decoration: none;
     color: var(--re-background-light);
 }
-
-.desktop{
-    display: none;
+.desktop .button{
+    background-color: var(--re-background-light);
+    color: var(--re-dark);
 }
 
 /*#endregion header*/
@@ -84,7 +93,50 @@ header .d-flex{
 /*#region main*/
 .applications .col_12{
     background-color: var(--re-background-second);
+    border-radius: 20px;
 }
+
+.applications .col_md_8{
+    flex-wrap: nowrap;
+    margin-right: 1rem;
+}
+
+.applications h4{
+    color: var(--re-secondary);
+    padding: 1.5rem 0;
+}
+
+.applications p{
+    padding-bottom: 2rem;
+}
+
+
+.applications .button{
+    background-color: var(--re-secondary);
+    text-decoration: none;
+    color: var(--re-background-light);
+    padding: 0.5rem 2rem;
+}
+
+.applications img{
+    width: 90%;
+    padding: 2.5rem 2rem 0;
+}
+
+.applications .col_md_4{
+    text-align: center;
+}
+
+.applications .center{
+    margin: 0 1rem;
+}
+
+.applications .col_md_4 i{
+   font-size: 55px;
+   color: var(--re-secondary);
+   padding-top: 1rem;
+}
+
 /*applications*/
 
 .planning{
@@ -126,7 +178,50 @@ footer{
 }
 /*#endregion footer*/
 
-@media screen and (min-width:768px) {
+
+@media screen and (max-width: 480px) {
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .d-flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .col_12{
+        width: calc((100% / 12)* 12)
+    }
+
+    .applications .col_md_8{
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .applications .center{
+        margin: 1rem 0;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+    }
+
+    .mobile .fa-bars{
+        color: var(--re-background-light);
+    }
+}
+
+@media screen and (max-width: 768px) {
     .container{
         width: 95%;
     }
@@ -134,40 +229,10 @@ footer{
     .col_lg_6{
         width: calc((100% / 12)* 6);
     }
-    
-}
 
-@media screen and (min-width:1200px){
-    .container{
-        width:70%;
-        margin: auto;
-    }
-
-    .col_md_4{
-        width: calc((100% / 12)* 4);
-    }
-    .col_md_8{
-        width: calc((100% / 12)* 8);
-    }
-
-    .mobile{
-        display: none;
-    }
-
-    .desktop{
+    .applications .row,
+    .applications .col_md_8{
         display: flex;
     }
-
-    .desktop a{
-        padding-right: 1rem;
-        text-decoration: none;
-        color: var(--re-background-light);
-    }
-
-    .desktop .button{
-        background-color: var(--re-background-light);
-        color: var(--re-dark);
-    }
-
-
+    
 }
