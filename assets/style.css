@@ -52,6 +52,15 @@ header .d-flex{
 .applications .col_12{
     background-color: var(--re-background-second);
 }
+/*applications*/
+
+.planning{
+    background-color: var(--re-primary);
+}
+
+.planning .row .col_12:last-child{
+    background-color: var(--re-background-light);
+}
 /*#endregion main*/
 
 @media screen and (min-width:768px) {
