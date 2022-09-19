@@ -16,8 +16,12 @@
 }
 
 .container{
-    width: 100%;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
 }
 
 .d-flex{
@@ -37,6 +41,13 @@
     width: calc((100% / 12)* 1);
 }
 
+.button{
+    background-color: var(--re-primary);
+    column-rule-color: var(--re-background-light);
+    border-radius: 40px;
+    padding: 0.5rem 0.5rem;
+}
+
 header,
 .applications,
 .partners .cards,
@@ -53,7 +64,21 @@ header{
 
 header .d-flex{
     justify-content: space-between;
+    align-items: center;
 }
+
+.logo{
+    padding: 1rem 0;
+}
+
+.mobile .fa-bars{
+    color: var(--re-background-light);
+}
+
+.desktop{
+    display: none;
+}
+
 /*#endregion header*/
 
 /*#region main*/
@@ -102,6 +127,10 @@ footer{
 /*#endregion footer*/
 
 @media screen and (min-width:768px) {
+    .container{
+        width: 95%;
+    }
+
     .col_lg_6{
         width: calc((100% / 12)* 6);
     }
@@ -120,4 +149,25 @@ footer{
     .col_md_8{
         width: calc((100% / 12)* 8);
     }
+
+    .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: flex;
+    }
+
+    .desktop a{
+        padding-right: 1rem;
+        text-decoration: none;
+        color: var(--re-background-light);
+    }
+
+    .desktop .button{
+        background-color: var(--re-background-light);
+        color: var(--re-dark);
+    }
+
+
 }
