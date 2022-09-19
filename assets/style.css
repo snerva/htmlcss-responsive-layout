@@ -14,3 +14,22 @@
     --re-background-second: #B5DDFF;
     --re-banner-third: #FDC15F;
 }
+
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+/*#region header*/
+header{
+    background-color: var(--re-secondary);
+}
+
+header .d-flex{
+    justify-content: space-between;
+}
+/*#endregion header*/
