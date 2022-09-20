@@ -7,12 +7,18 @@
 :root{
     --re-dark: #111111;
     --re-background-dark: #333333;
+    --re-font-primary: #5A6E7F;
     --re-background-light: #FFFFFF;
     --re-banner-second: #D4D3F4;
     --re-primary: #9792E4;
     --re-secondary: #0084FD;
     --re-background-second: #B5DDFF;
     --re-banner-third: #FDC15F;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    color: var(--re-font-primary);
 }
 
 .container{
@@ -65,16 +71,13 @@ footer{
 header{
     background-color: var(--re-secondary);
 }
-
 header .d-flex{
     justify-content: space-between;
     align-items: center;
 }
-
 .logo{
     padding: 1rem 0;
 }
-
 .mobile{
     display: none;
 }
@@ -90,7 +93,6 @@ header .d-flex{
     background-color: var(--re-background-light);
     color: var(--re-dark);
 }
-
 /*#endregion header*/
 
 /*#region main*/
@@ -98,42 +100,33 @@ header .d-flex{
     background-color: var(--re-background-second);
     border-radius: 20px;
 }
-
 .applications .col_md_8{
     flex-wrap: nowrap;
     margin-right: 1rem;
 }
-
-.applications h4{
+.applications h3{
     color: var(--re-secondary);
     padding: 1.5rem 0;
 }
-
 .applications p{
     padding-bottom: 2rem;
+    font-weight: bold;
 }
-
-
 .applications .button{
     background-color: var(--re-secondary);
     text-decoration: none;
     color: var(--re-background-light);
     padding: 0.5rem 2rem;
 }
-
 .applications img{
-    width: 90%;
     padding: 2.5rem 2rem 0;
 }
-
 .applications .col_md_4{
     text-align: center;
 }
-
 .applications .center{
     margin: 0 1rem;
 }
-
 .applications .col_md_4 i{
    font-size: 55px;
    color: var(--re-secondary);
@@ -144,22 +137,15 @@ header .d-flex{
 .planning{
     background-color: var(--re-primary);
 }
-
 .planning .container{
     width: 55%;
 }
-
 .planning .white{
     background-color: var(--re-background-light);
     border-radius: 40px;
     padding: 1rem;
     text-align: center;
 }
-
-.planning img{
-    width: 100%;
-}
-
 .planning .row{
     padding: 2rem 0;
     align-items: end;
@@ -170,21 +156,21 @@ header .d-flex{
 .left h3{
     margin-bottom: 2rem;
 }
-
 .left img{
     padding: 4rem 0;
 }
-
 .planning .right{
     padding: 5rem 1rem 0;
 }
-
 .planning .white img{
     padding: 1rem 2.5rem;
 }
-
 .right h4{
     margin-bottom: 1rem;
+    color: var(--re-dark);
+}
+.right p{
+    font-style: italic;
 }
 .right .fa-solid{
     background-color: var(--re-primary);
@@ -201,33 +187,30 @@ header .d-flex{
     border-radius: 30px;
     align-items: center;
 }
-
 .photo img{
     width: 134px;
     height: 135px;
     border-radius: 50%;
     margin: 1rem 0.5rem;
 }
-
 .cards .cit{
     margin: 0 2rem;
 }
-
 .cit h4{
     margin-top: 1rem;
 }
-
 .partners_content{
     text-align: center;
     margin: 2rem;
 }
-
+.partners_content h4{
+    font-weight: normal;
+}
 .partners_content h2{
+    font-size: xx-large;
     margin: 1.5rem;
     color: var(--re-primary);
 }
-
-
 /*partners*/
 
 .benefits{
@@ -253,6 +236,40 @@ footer{
     background-color: var(--re-background-dark);
 }
 /*#endregion footer*/
+
+@media screen and (max-width: 768px) {
+    header .container,
+    .applications .container,
+    .planning .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .applications .row,
+    .applications .col_md_8{
+        display: flex;
+    }
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+    }
+
+    .mobile .fa-bars{
+        color: var(--re-background-light);
+    }
+
+    .planning .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .planning .col_12{
+        width: calc((100% / 12)* 12)
+    }
+    
+}
 
 
 @media screen and (max-width: 480px) {
@@ -307,36 +324,3 @@ footer{
 
 }
 
-@media screen and (max-width: 768px) {
-    header .container,
-    .applications .container,
-    .planning .container{
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .applications .row,
-    .applications .col_md_8{
-        display: flex;
-    }
-    .desktop{
-        display: none;
-    }
-
-    .mobile{
-        display: flex;
-    }
-
-    .mobile .fa-bars{
-        color: var(--re-background-light);
-    }
-
-    .planning .row{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .planning .col_12{
-        width: calc((100% / 12)* 12)
-    }
-    
-}
