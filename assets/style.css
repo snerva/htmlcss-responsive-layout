@@ -223,7 +223,7 @@ header .d-flex{
     padding-bottom: 2.5rem;
 }
 .benefits .col_12{
-   padding: 1rem;
+   padding: 0.5rem;
 }
 .benefit_card{
     background-color: var(--re-background-light);
@@ -250,28 +250,35 @@ header .d-flex{
     padding: 0.25rem 2rem;
 }
 /*benefits*/
-
 .about .row{
-    column-gap: 2rem;
+    padding-bottom: 4rem;
+}
+.about .col_md_4{
+    padding: 0 5rem 0 3rem;
+}
+.about .col_md_8{
+    padding-right: 3rem;
 }
 .about .col_md_8 h2{
+    color: var(--re-primary);
     font-size: xx-large;
 }
 .about .col_md_8 p{
     padding: 1rem 0;
 }
-.about h2{
+.about h4{
     color: var(--re-primary);
-    padding: 1rem 0;
+    padding: 1rem 0 1.5rem;
+    font-size: larger;
 }
 .about .button{
     color: var(--re-background-light);
 }
 .about_photo{
-
     position: relative;
 }
 .about img{
+    height: 165px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -281,7 +288,6 @@ header .d-flex{
     top: 0;
     right: 0;
 }
-
 /*about*/
 
 .banner{
@@ -301,7 +307,9 @@ footer{
     header .container,
     .applications .container,
     .planning .container,
-    .partners .container{
+    .partners .container,
+    .benefits .container,
+    .about .container{
         max-width: 720px;
         margin: 0 auto;
     }
@@ -340,7 +348,9 @@ footer{
     header .container,
     .applications .container,
     .planning .container,
-    .partners .container{
+    .partners .container,
+    .benefits .conatiner,
+    .about .container{
         max-width: 360px;
         margin: 0 auto;
     }
