@@ -254,7 +254,7 @@ header .d-flex{
     padding-bottom: 4rem;
 }
 .about .col_md_4{
-    padding: 0 5rem 0 3rem;
+    padding: 0 5rem 0 2rem;
 }
 .about .col_md_8{
     padding-right: 3rem;
@@ -286,7 +286,10 @@ header .d-flex{
     color: var(--re-primary);
     position: absolute;
     top: 0;
-    right: 0;
+    right: 1.5rem;
+}
+.about .fa-brands{
+    color: var(--re-background-light);
 }
 /*about*/
 
