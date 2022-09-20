@@ -58,8 +58,9 @@ p{
 .button{
     background-color: var(--re-primary);
     column-rule-color: var(--re-background-light);
+    text-decoration: none;
     border-radius: 40px;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 1rem;
 }
 
 header,
@@ -222,6 +223,9 @@ header .d-flex{
     padding-bottom: 2.5rem;
 }
 .benefits .col_12{
+   padding: 1rem;
+}
+.benefit_card{
     background-color: var(--re-background-light);
     padding:2rem 1.5rem 1.5rem;
     border-radius: 15px;
@@ -246,6 +250,37 @@ header .d-flex{
     padding: 0.25rem 2rem;
 }
 /*benefits*/
+
+.about .row{
+    column-gap: 2rem;
+}
+.about .col_md_8 h2{
+    font-size: xx-large;
+}
+.about .col_md_8 p{
+    padding: 1rem 0;
+}
+.about h2{
+    color: var(--re-primary);
+    padding: 1rem 0;
+}
+.about .button{
+    color: var(--re-background-light);
+}
+.about_photo{
+
+    position: relative;
+}
+.about img{
+    object-fit: cover;
+    border-radius: 50%;
+}
+.about .fa-solid{
+    color: var(--re-primary);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
 /*about*/
 
