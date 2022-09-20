@@ -26,6 +26,11 @@ body{
     margin: 0 auto;
 }
 
+.container_small{
+    width: 40%;
+    margin: 0 auto;
+}
+
 img{
     max-width: 100%;
 }
@@ -296,6 +301,33 @@ header .d-flex{
 .banner{
     background-color: var(--re-primary);
 }
+.banner_contents{
+    text-align: center;
+    padding: 2rem 1rem;
+}
+.banner h4{
+    color: var(--re-banner-second);
+    font-weight: normal;
+}
+.banner h2{
+    font-size: xx-large;
+}
+.banner h1{
+    color: var(--re-banner-third);
+    font-size: 3rem;
+    padding: 1rem;
+}
+.banner_button{
+    padding: 1rem 0 2rem;
+}
+.banner .button{
+    background-color: var(--re-background-light);
+    color: var(--re-primary);
+    padding: 0.5rem 2.5rem;
+}
+.banner_contents a{
+    color: var(--re-background-light);
+}
 
 /*banner*/
 /*#endregion main*/
@@ -312,7 +344,8 @@ footer{
     .planning .container,
     .partners .container,
     .benefits .container,
-    .about .container{
+    .about .container,
+    .container_small{
         max-width: 720px;
         margin: 0 auto;
     }
@@ -353,7 +386,8 @@ footer{
     .planning .container,
     .partners .container,
     .benefits .conatiner,
-    .about .container{
+    .about .container,
+    .container_small{
         max-width: 360px;
         margin: 0 auto;
     }
