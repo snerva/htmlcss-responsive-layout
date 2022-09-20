@@ -27,7 +27,7 @@ body{
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
 }
 
 .d-flex{
@@ -38,6 +38,11 @@ img{
     margin: 1rem -1rem;
 }
 
+p{
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+}
+
 [class^="col_"]{
     padding: 0 1rem;
 }
@@ -45,9 +50,7 @@ img{
 .col_md_4{
     width: calc((100% / 12)* 4);
 }
-.col_lg_6{
-    width: calc((100% / 12)* 6);
-}
+
 .col_md_8{
     width: calc((100% / 12)* 8);
 }
@@ -163,7 +166,7 @@ header .d-flex{
     padding: 5rem 1rem 0;
 }
 .planning .white img{
-    padding: 1rem 2.5rem;
+    padding: 0 1rem;
 }
 .right h4{
     margin-bottom: 1rem;
@@ -188,16 +191,13 @@ header .d-flex{
     align-items: center;
 }
 .photo img{
-    width: 134px;
     height: 135px;
+    object-fit: cover;
     border-radius: 50%;
     margin: 1rem 0.5rem;
 }
 .cards .cit{
     margin: 0 2rem;
-}
-.cit h4{
-    margin-top: 1rem;
 }
 .partners_content{
     text-align: center;
@@ -215,10 +215,34 @@ header .d-flex{
 
 .benefits{
     background-color: var(--re-primary);
+    margin: 3rem 0;
 }
-
+.benefits .row{
+    flex-wrap: wrap;
+}
 .benefits .col_12{
     background-color: var(--re-background-light);
+    padding:2rem 1.5rem 1.5rem;
+    border-radius: 15px;
+}
+.benefits h2{
+    color: var(--re-background-light);
+    text-align: center;
+    font-size: xx-large;
+    padding: 2rem 0 1rem;
+}
+.benefits h4{
+    font-size: larger;
+}
+.benefits .col_12 h4,
+.benefits .col_12 .fa-solid{
+    color: var(--re-primary);
+    margin-bottom: 1rem;
+}
+.benefits .col_12 .button{
+    color: var(--re-background-light);
+    text-decoration: none;
+    padding: 0.25rem 2rem;
 }
 /*benefits*/
 
@@ -240,8 +264,9 @@ footer{
 @media screen and (max-width: 768px) {
     header .container,
     .applications .container,
-    .planning .container{
-        width: 90%;
+    .planning .container,
+    .partners .container{
+        max-width: 720px;
         margin: 0 auto;
     }
 
@@ -268,6 +293,9 @@ footer{
     .planning .col_12{
         width: calc((100% / 12)* 12)
     }
+    .col_lg_6{
+        width: calc((100% / 12)* 6);
+    }
     
 }
 
@@ -277,7 +305,7 @@ footer{
     .applications .container,
     .planning .container,
     .partners .container{
-        width: 80%;
+        max-width: 360px;
         margin: 0 auto;
     }
 
