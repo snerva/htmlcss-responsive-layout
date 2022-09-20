@@ -336,6 +336,10 @@ header .d-flex{
 footer{
     background-color: var(--re-background-dark);
 }
+.footer_content{
+    padding: 2rem 2rem;
+    text-align: center;
+}
 /*#endregion footer*/
 
 @media screen and (max-width: 768px) {
